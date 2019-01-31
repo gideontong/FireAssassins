@@ -43,11 +43,11 @@ def assignTargets(teams, allNames):
                         used.append(allNames[rt][rp])
                         print(allNames[rt][rp])
                 
-                print('\n')
+            print('\n')
             
             for i in range(len(teams)):
                 for j in range(5):
                     if(used.count(allNames[i][j]) != 1):
-                        print("DO NOT USE THIS SAMPLE, RUN AGAIN")
+                        '''print("DO NOT USE THIS SAMPLE, RUN AGAIN")'''
 
 assignTargets(teams, allNames)
