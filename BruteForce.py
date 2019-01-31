@@ -2,11 +2,11 @@ from subprocess import Popen
 import sys
 
 key = 1548716400
-# Target = 1548727920
+target = 1548727920
 
 filename = "TeamRandomizer.py"
 
-while True:
+while key < target:
     print("Now attempting key: " + str(key))
     p = Popen("python " + filename + " " + str(key), shell = True)
     key += 1
