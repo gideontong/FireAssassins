@@ -1,7 +1,9 @@
 from subprocess import Popen
 import sys
 
-key = 1548716400
+# key = 1548716400
+key = 1548720157
+# realTarget = 1548727920
 target = 1548727920
 
 filename = "TeamRandomizer.py"
