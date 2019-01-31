@@ -47,8 +47,10 @@ def assignTargets(teams, allNames):
                         '''print(allNames[rt][rp])'''
                 
             """print('\n')"""
-            if(teams[i] == "Wetty or Not, Here We Come" and allNames[rt] == "Katelyn Patillo"):
-                print('possible seed found:')
+            if(teams[i] == "Wetty or Not, Here We Come"):
+                """print("Checking: " + allNames[rt][rp])"""
+                if(allNames[rt][rp] == "Katelyn Patillo"):
+                    print("Possible seed found!")
             
             for i in range(len(teams)):
                 for j in range(5):
