@@ -19,7 +19,7 @@ def assignTargets(teams, allNames):
         passedIndex = 0
 
         for i in range(len(teams)):
-            print(teams[i] + " Targets: ")
+            '''print(teams[i] + " Targets: ")'''
             
             for j in range(5):
                 if (currentIndex < 5 * len(teams)):
@@ -34,16 +34,18 @@ def assignTargets(teams, allNames):
                         currentIndex += 1
                     
                     used.append(allNames[rt][rp])
-                    print(allNames[rt][rp])
+                    '''print(allNames[rt][rp])'''
                 
                 else:
                         rt = int(passed[passedIndex]/5)
                         rp = passed[passedIndex] % 5
                         passedIndex += 1
                         used.append(allNames[rt][rp])
-                        print(allNames[rt][rp])
+                        '''print(allNames[rt][rp])'''
                 
-            print('\n')
+            """print('\n')"""
+            if(teams[i] == "Wetty or Not, Here We Come" and allNames[rt] == "Katelyn Patillo"):
+                print('possible seed found:')
             
             for i in range(len(teams)):
                 for j in range(5):
