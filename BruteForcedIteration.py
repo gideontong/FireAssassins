@@ -12,5 +12,4 @@ for nextKey in keylist:
     '''f = open('output' + nextKey + '.txt', 'w+')'''
     print("Iteration " + str(i) + "/87 with key " + nextKey)
     p = Popen("python " + filename + " " + nextKey, shell = True)
-    nextKey = keylist.readline()
     time.sleep(1)
