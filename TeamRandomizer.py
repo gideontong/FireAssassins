@@ -49,7 +49,7 @@ def assignTargets(teams, allNames):
                 
             """print('\n')"""
             if(teams[i] == "Wetty or Not, Here We Come"):
-                """print("Checking: " + allNames[rt][rp])"""
+                print("Checking: " + allNames[rt][rp])
                 if(allNames[rt][rp] == "Katelyn Patillo"):
                     print("Possible seed found! " + sys.argv[1])
             

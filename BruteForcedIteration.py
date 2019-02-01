@@ -8,7 +8,7 @@ i = 0
 
 for nextKey in keylist:
     i += 1
-    nextKey = nextKey[0:9]
+    nextKey = nextKey[0:10]
     '''f = open('output' + nextKey + '.txt', 'w+')'''
     print("Iteration " + str(i) + "/87 with key " + nextKey)
     p = Popen("python " + filename + " " + nextKey, shell = True)
