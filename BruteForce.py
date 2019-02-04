@@ -1,3 +1,16 @@
+"""
+Program: Brute Force
+Author:  Gideon Tong
+Version: Generator v5
+
+Description
+===========
+This program iterates through a list of keys from the starting value to the target, hence the name
+brute force, because it is brute forcing for a certain value. It displays this output, which is
+traditionally piped to a text file using the pipe selector or the alligator selector, and is used
+for analysis at a later time.
+"""
+
 from subprocess import Popen
 import sys
 

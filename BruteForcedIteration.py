@@ -1,6 +1,7 @@
 """
 Program: Brute Forced Iteration
 Author:  Gideon Tong
+Version: Generator v4
 
 Description
 ===========
