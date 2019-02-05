@@ -16,15 +16,29 @@ from subprocess import Popen
 import sys
 import time
 
-keylist = open('pwned.txt')
+keylist = open('seed/round3.txt')
 filename = "TeamRandomizer.py"
 i = 0
+
+class Log(object):
+    def __init__(self):
+        self.terminal= sys.stdout
+        self.log = open('v5_log.txt', 'a')
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        pass
+
+sys.stdout = Log()
 
 for nextKey in keylist:
     i += 1
     nextKey = nextKey[0:10]
-    f = open('generates/output' + nextKey + '.txt', 'w+')
-    print("Iteration " + str(i) + "/87 with key " + nextKey)
-    f.write("Key: " + nextKey)
-    p = Popen("python " + filename + " " + nextKey, shell = True, stdout=f)
+    seededGeneration = open('generates/round3/output' + nextKey + '.txt', 'w+')
+    print("Testing iteration " + str(i) + " with key " + nextKey)
+    seededGeneration.write("Key: " + nextKey)
+    p = Popen("python3 " + filename + " " + nextKey, shell = True, stdout = seededGeneration)
     time.sleep(1)

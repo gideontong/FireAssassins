@@ -24,7 +24,7 @@ def assignTargets(teams, allNames):
 
         for i in range(len(teams)):
             #print(teams[i] + " Targets with seed " + sys.argv[1])
-            #print(teams[i] + " Targets:")
+            print(teams[i] + " Targets:")
             
             for j in range(5):
                 if (currentIndex < 5 * len(teams)):
@@ -39,6 +39,7 @@ def assignTargets(teams, allNames):
                         currentIndex += 1
                     
                     used.append(allNames[rt][rp])
+                    print(allNames[rt][rp])
                     #print(allNames[rt][rp] + " at rt=" + str(rt) + " and rp=" + str(rp))
                 
                 else:
@@ -46,14 +47,15 @@ def assignTargets(teams, allNames):
                         rp = passed[passedIndex] % 5
                         passedIndex += 1
                         used.append(allNames[rt][rp])
+                        print(allNames[rt][rp])
                         #print(allNames[rt][rp] + " at rt=" + str(rt) + " and rp=" + str(rp))
                 
-            #print('\n')
-            if(teams[i] == "Wetty or Not, Here We Come"):
+            print('\n')
+            """if(teams[i] == "Wetty or Not, Here We Come"):
                 #print("Checking: " + allNames[rt][rp])
                 #print("Team is a match")
                 if(allNames[rt][rp] == "Katelyn Patillo" or allNames[rt][rp] == ""):
-                    print("Possible seed found! Seed: " + sys.argv[1])
+                    #print("Possible seed found! Seed: " + sys.argv[1])"""
             
             for i in range(len(teams)):
                 for j in range(5):
