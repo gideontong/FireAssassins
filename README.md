@@ -1,12 +1,14 @@
 # Water Assassins
 
+As a side note, this project has now been deprecated. You can still download and browse the code, but it is no longer being maintained. If you'd like to submit a pull request, it'll be reviewed and accepted, but the code should continue to work as is, given the docs.
+
 ## What is water assassins? 
 
 Water assassins is a game played by many high schools where people are given targets that they must eliminate in order to progress to the next round. The variant played by Westlake High School's class of 2019 involved teams of 5 that were given random target lists that were also of 5 players. With 320 people playing and a $10 entrance fee, the prize pool was $3,200 and is split 7 ways, between the winning team and the two organizers. The rules are given in a "constitution" of sorts and the targets were distributed via Instagram, where minigames and kills were also announced, as well as other pertinent information related to the game.
 
 ## Backstory
 
-The [target list randomizer](CreateTargets.py) was written by Ethan Orlowsky, a person who also participated in playing water assassins, thus raising suspicions that he may have cheated in writing the program in order to give himself or his team an advantage. As a result, the organizers posted the code in a video on an Instagram story, leading [Gideon Tong](https://www.github.com/gideontong) to realize that it may be possible to actually find the original target list. Thus, this code repository was created, a name based on the idea that this was uncharted territory and he was "playing with fire" as he tried to gain himself an advantage in a real-world game by using knowledge of computer systems.
+The [target list randomizer](CreateTargets.py) was written by Ethan O., a person who also participated in playing water assassins, thus raising suspicions that he may have cheated in writing the program in order to give himself or his team an advantage. As a result, the organizers posted the code in a video on an Instagram story, leading [Gideon Tong](https://www.github.com/gideontong) to realize that it may be possible to actually find the original target list. Thus, this code repository was created, a name based on the idea that this was uncharted territory and he was "playing with fire" as he tried to gain himself an advantage in a real-world game by using knowledge of computer systems.
 
 This idea was developed in the first 48 hours of the game by Gideon Tong, who therorized it must be possible to reverse the order of a pseudo-random generator, even if it were not to be simple or trivial. However, it is believed that the process of doing so is trivial, and is a brute force attack in its worse case scenario.
 
